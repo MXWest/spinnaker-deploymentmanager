@@ -9,4 +9,4 @@ echo "Jenkins password is ${JENKINS_PASSWORD}"
 echo "Create deployment from config.jinja:"
 gcloud deployment-manager deployments create --template config.jinja ${DEPLOYMENT_NAME} --properties jenkinsPassword:${JENKINS_PASSWORD}
 export SPINNAKER_VM=$(gcloud compute instances list --filter="name~${DEPLOYMENT_NAME}-spinnaker.+" --uri)
-echo "Spinnaer VM is at ${SPINNAKER_VM}"
+echo "Spinnaker VM is at ${SPINNAKER_VM}"

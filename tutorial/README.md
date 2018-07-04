@@ -30,10 +30,6 @@ Run the script `00-spin-build.sh`. This will stand up
 3 instance groups: a Jenkins, a redis and a Spinnaker. In turn
 each of these instance groups will contain 1 VM.
 
-Upon completion of the deployment, the script will ask you
-whether you'd like to `ssh` in to your Spinnaker VM (so you
-can check that it's running as per the tutorial).
-
 ## Running
 `spin-connect.sh` Opens an `ssh` session to Spinnaker box and tunnels ports `8081` (The
 Spinnaker UI) and `8082` (Jenkins UI).
