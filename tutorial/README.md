@@ -38,6 +38,11 @@ Spinnaker UI) and `8082` (Jenkins UI).
 `spin-destroy.sh` will destroy all of the resources. Takes about 3
 and half minutes.
 
+### Important!
+`spin-destory.sh` doesn't know about the things you built and deployed
+from _within_ Spinnaker while it was running. Make sure to go back and remove
+those resources manually.
+
 ## Where is the Spinnaker API?
 `spin-get-api-ip.sh`
 
